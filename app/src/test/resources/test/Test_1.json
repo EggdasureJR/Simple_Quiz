@@ -1,0 +1,52 @@
+{
+    "Q_4-1": {
+        "Q": "Which phasmophobia ghost can teleport outside of a hunt?",
+        "A-1": "Jinn",
+        "A-2": "Wraith",
+        "A-3": "Oni",
+        "A-4": "Deogen",
+        "Correct_answer": 2
+    }, 
+    
+    "Q_4-2": {
+        "Q": "Which phasmophobia ghost can move at 3.71m/s (fastest in the game)?",
+        "A-1": "Moroi",
+        "A-2": "Yokai",
+        "A-3": "Demon",
+        "A-4": "Revenent",
+        "Correct_answer": 1
+    },
+
+    "Q_4-3": {
+        "Q": "What a special ability of an Obake",
+        "A-1": "Show a 6 toed foot print",
+        "A-2": "Hunt after 3 fire lights are blown out",
+        "A-3": "Shapeshift with a 6.66% chance per blink",
+        "A-4": "Change favorite room to a room further than any other ghost can",
+        "Correct_answer": 3
+    },
+
+    "Q_B-4": {
+        "Q": "A Phantom is invisible after the summoning circle is lit",
+        "Correct_answer": "true"
+    },
+
+    "Q_B-5": {
+        "Q": "A Deogen has dots as evidence but can only be seen through a camera",
+        "Correct_answer": "false"
+    },
+
+    "Q_4-6": {
+        "Q": "What cursed object is used for a definitive test fo a Thaye",
+        "A-1": "VooDoo doll",
+        "A-2": "Ouijia board",
+        "A-3": "Summoning circle",
+        "A-4": "Cursed mirror",
+        "Correct_answer": 2
+    },
+
+    "Q_B-7": {
+        "Q": "A Shade cannot write in the writing book while a player is in the same room",
+        "Correct_answer": "true"
+    }
+}

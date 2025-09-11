@@ -1,0 +1,29 @@
+{
+    "Q_4-1": {
+        "Q": "This will be the question for a 4 answer question",
+        "A-1": "Red Answer",
+        "A-2": "Green Answer",
+        "A-3": "Blue Answer",
+        "A-4": "Yellow Answer",
+        "Correct_answer": 3
+    },
+
+    "Q_B-2": {
+        "Q": "This is the question for a boolean (true/false) question",
+        "Correct_answer": "true"
+    },
+
+    "Q_B-3": {
+        "Q": "This is another boolean question",
+        "Correct_answer": "false"
+    },
+
+    "Q_4-4": {
+        "Q": "This will be another 4 answer question and the questions can switch from 4 question to boolean how ever many times you want",
+        "A-1": "1 Answer",
+        "A-2": "2 Answer",
+        "A-3": "3 Answer",
+        "A-4": "4 Answer",
+        "Correct_answer": 1
+    }
+}
