@@ -6,6 +6,8 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
+import java.io.File;
+
 public class Windows {
     static JFrame Window = new JFrame("Simple Quiz");
 
@@ -36,7 +38,21 @@ public class Windows {
 
         Window.setVisible(true);
 
+        JFileChooser fileChooser = new JFileChooser();
+
+        int returnValue = fileChooser.showOpenDialog(null);
         
+        if (returnValue == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+
+            String filePath = selectedFile.getAbsolutePath();
+            
+            Questions.test = filePath;
+        } 
+        
+        else{
+            System.out.println("No file selected.");
+        }
     }
 
     public static void Question(String question){

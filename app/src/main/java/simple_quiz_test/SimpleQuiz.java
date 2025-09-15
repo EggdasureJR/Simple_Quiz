@@ -62,11 +62,11 @@ public class SimpleQuiz {
     }
 
     public static void questions_4(String answer_1, String answer_2, String answer_3, String answer_4, String question){   
-        Windows.Question(question);
-
         JPanel blank = new JPanel();
 
         blank.setBounds(0, 0, 0, 0);
+
+        Windows.Question(question);
 
         Buttons.Button_1(answer_1);
         
@@ -82,11 +82,11 @@ public class SimpleQuiz {
     }
 
     public static void question_bool(String question){
-        Windows.Question(question);
-
         JPanel blank = new JPanel();
 
         blank.setBounds(0, 0, 0, 0);
+
+        Windows.Question(question);
 
         Buttons.Button_True();
 

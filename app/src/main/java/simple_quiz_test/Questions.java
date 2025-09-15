@@ -19,10 +19,8 @@ public class Questions {
     public static void Quizzes(){
         JSONParser parser = new JSONParser();
 
-        test = "example_test";
-
         try {
-            FileReader reader = new FileReader("app/src/test/resources/test/" + test + ".json");
+            FileReader reader = new FileReader(test);
 
             Object obj = parser.parse(reader);
 
