@@ -169,22 +169,20 @@ public class Windows {
 
         answer_text.setFont(new Font("Arial", Font.BOLD, Window.getHeight() / 5));
 
-        answer.setForeground(new Color(0, 240, 0));
+        
 
         if(answer_result.substring(0, 1).equals("C")){
-            
+            answer_text.setForeground(new Color(0, 240, 0));
         }
 
         else{
-            answer.setForeground(new Color(240, 0, 0));
+            answer_text.setForeground(new Color(240, 0, 0));
         }
 
         answer.add(answer_text, BorderLayout.CENTER);
 
         Window.add(answer);
 
-        // try{
-        //     Thread.sleep(1000);
-        //     } catch(InterruptedException e) {}
+        
     }
 }
