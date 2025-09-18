@@ -152,14 +152,14 @@ public class Windows {
     public static void Answer(String answer_result){
         answer = new JPanel();
 
-        // answer.setOpaque(false);
+        answer.setOpaque(false);
 
         answer.setBackground(new Color(0, 0, 0));
 
         answer.setBounds(0, 0, Window.getWidth(), Window.getHeight());
 
 
-        answer_text = new JLabel("<html><div style='text-align: center;'>" + answer_result + "%</div></html>", JLabel.CENTER);
+        answer_text = new JLabel("<html><div style='text-align: center;'>" + answer_result + "</div></html>", JLabel.CENTER);
 
         answer_text.setHorizontalAlignment(JLabel.CENTER);
 
@@ -169,8 +169,10 @@ public class Windows {
 
         answer_text.setFont(new Font("Arial", Font.BOLD, Window.getHeight() / 5));
 
-        if(answer_result.equalsIgnoreCase("Correct")){
-            answer.setForeground(new Color(0, 240, 0));
+        answer.setForeground(new Color(0, 240, 0));
+
+        if(answer_result.substring(0, 1).equals("C")){
+            
         }
 
         else{
@@ -181,8 +183,8 @@ public class Windows {
 
         Window.add(answer);
 
-        try{
-            Thread.sleep(1000);
-            } catch(InterruptedException e) {}
+        // try{
+        //     Thread.sleep(1000);
+        //     } catch(InterruptedException e) {}
     }
 }

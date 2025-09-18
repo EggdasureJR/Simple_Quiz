@@ -185,10 +185,14 @@ public class SimpleQuiz {
 
     
     public static void clear(){
+        result = "Correct";
+
+        Windows.Answer(result);
+
         answered = true;
 
         results = false;
-
+        
         Windows.question_box.removeAll();
         Windows.question_box.revalidate();
         Windows.question_box.repaint();
@@ -200,6 +204,12 @@ public class SimpleQuiz {
         Windows.submit_box.repaint();
         Windows.submit_box.setVisible(false);
         Windows.Window.remove(Windows.submit_box);
+
+        // Windows.answer.removeAll();
+        // Windows.answer.revalidate();
+        // Windows.answer.repaint();
+        // Windows.answer.setVisible(false);
+        // Windows.Window.remove(Windows.answer);
 
         if(question_4){
             Buttons.Button_1.removeAll();
@@ -240,13 +250,5 @@ public class SimpleQuiz {
             Buttons.Button_False.setVisible(false);
             Windows.Window.remove(Buttons.Button_False);
         }
-
-        Windows.Answer(result);
-
-        Windows.answer.removeAll();
-        Windows.answer.revalidate();
-        Windows.answer.repaint();
-        Windows.answer.setVisible(false);
-        Windows.Window.remove(Windows.answer);
     }
 }

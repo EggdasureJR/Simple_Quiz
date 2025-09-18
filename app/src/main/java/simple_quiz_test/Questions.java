@@ -6,9 +6,6 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
 
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
