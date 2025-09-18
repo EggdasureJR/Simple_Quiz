@@ -21,8 +21,6 @@ public class SimpleQuiz {
     static Boolean question_bool = false;
 
     static Boolean results= false;
-
-    static String result = "";
     public static void main(String[] args) {
         Windows.Window_setup();
 
@@ -38,12 +36,6 @@ public class SimpleQuiz {
 
                 if(Buttons.option == Integer.parseInt(Questions.Test.get("Q_4-" + n).get(5))){
                     point_sum++;
-
-                    result = "Correct";
-                }
-
-                else{
-                    result = "Incorrect";
                 }
             }
 
@@ -54,18 +46,10 @@ public class SimpleQuiz {
 
                 if(Buttons.option == 1 && Questions.Test.get("Q_B-" + n).get(1).equals("true")){
                     point_sum++;
-
-                    result = "Correct";
                 }
 
                 else if(Buttons.option == 2 && Questions.Test.get("Q_B-" + n).get(1).equals("false")){
                     point_sum++;
-
-                    result = "Correct";
-                }
-
-                else{
-                    result = "Incorrect";
                 }
             }
 
@@ -185,12 +169,10 @@ public class SimpleQuiz {
 
     
     public static void clear(){
-        Windows.Answer(result);
-
         answered = true;
 
         results = false;
-        
+
         Windows.question_box.removeAll();
         Windows.question_box.revalidate();
         Windows.question_box.repaint();
@@ -242,17 +224,5 @@ public class SimpleQuiz {
             Buttons.Button_False.setVisible(false);
             Windows.Window.remove(Buttons.Button_False);
         }
-
-        try{
-            Thread.sleep(1000);
-            } catch(InterruptedException e) {}
-
-        System.out.println("HELLO");
-
-        Windows.answer.removeAll();
-        Windows.answer.revalidate();
-        Windows.answer.repaint();
-        Windows.answer.setVisible(false);
-        Windows.Window.remove(Windows.answer);
     }
 }

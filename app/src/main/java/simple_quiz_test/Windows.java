@@ -26,12 +26,6 @@ public class Windows {
 
     static JLabel result_text;
 
-
-    static JPanel answer;
-
-    static JLabel answer_text;
-
-
     public static void Window_setup(){
         Window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -147,42 +141,5 @@ public class Windows {
         result.add(result_text, BorderLayout.CENTER);
 
         Window.add(result);
-    }
-
-    public static void Answer(String answer_result){
-        answer = new JPanel();
-
-        answer.setOpaque(false);
-
-        answer.setBackground(new Color(0, 0, 0));
-
-        answer.setBounds(0, 0, Window.getWidth(), Window.getHeight());
-
-
-        answer_text = new JLabel("<html><div style='text-align: center;'>" + answer_result + "</div></html>", JLabel.CENTER);
-
-        answer_text.setHorizontalAlignment(JLabel.CENTER);
-
-        answer_text.setVerticalAlignment(JLabel.CENTER);
-
-        answer.setLayout(new BorderLayout());
-
-        answer_text.setFont(new Font("Arial", Font.BOLD, Window.getHeight() / 5));
-
-        
-
-        if(answer_result.substring(0, 1).equals("C")){
-            answer_text.setForeground(new Color(0, 240, 0));
-        }
-
-        else{
-            answer_text.setForeground(new Color(240, 0, 0));
-        }
-
-        answer.add(answer_text, BorderLayout.CENTER);
-
-        Window.add(answer);
-
-        
     }
 }
