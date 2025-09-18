@@ -26,7 +26,16 @@ public class SimpleQuiz {
 
         Questions.Quizzes();
 
+        Buttons.option = 1;
+
+        Windows.instructions();
+
         resize();
+
+        while(!answered){System.out.print("");}
+                answered = false;
+
+        Buttons.option = 0;
 
         for(int n = 1; n <= Questions.Test.size(); n++){
             try{

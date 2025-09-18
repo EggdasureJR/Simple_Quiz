@@ -142,4 +142,66 @@ public class Windows {
 
         Window.add(result);
     }
+
+    public static void instructions(){
+        Questions.instructions = "<html><div style='text-align: center;'>" + Questions.instructions + "</div></html>";
+
+        question_box = new JPanel();
+
+        question_box.setBackground(new Color(40, 40, 40));
+
+        question_box.setBounds(25, 25, Windows.Window.getWidth() - 50, Windows.Window.getHeight() - Windows.Window.getHeight() / 3 * 2);
+
+
+        question_text = new JLabel(Questions.instructions, JLabel.CENTER);
+
+        question_text.setHorizontalAlignment(JLabel.CENTER);
+
+        question_text.setVerticalAlignment(JLabel.CENTER);
+
+        question_box.setLayout(new BorderLayout());
+
+        question_text.setFont(new Font("Arial", Font.BOLD, Windows.question_box.getHeight() / 10));
+
+        question_text.setForeground(new Color(245, 245, 245));
+
+
+        submit_box = new JPanel();
+
+        submit_box.setBackground(new Color(60, 60, 60));
+        
+        submit_box.setBounds(Windows.Window.getWidth() / 2 - (Windows.Window.getWidth() / 6), Windows.question_box.getHeight() + ((Windows.Window.getHeight() / 11 * 3 - 50) * 2) + 100, Windows.Window.getWidth() / 3, Windows.Window.getHeight() / 20);
+
+
+        submit_box.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e){
+                if(Buttons.option != 0){
+                    SimpleQuiz.clear();
+                }
+            }
+        });
+
+        
+        submit_text = new JLabel("Start", JLabel.CENTER);
+
+        submit_text.setHorizontalAlignment(JLabel.CENTER);
+
+        submit_text.setVerticalAlignment(JLabel.CENTER);
+
+        submit_box.setLayout(new BorderLayout());
+
+        submit_text.setFont(new Font("Arial", Font.BOLD, Windows.submit_box.getHeight() / 2));
+
+        submit_text.setForeground(new Color(245, 245, 245));
+
+
+        question_box.add(question_text, BorderLayout.CENTER);
+
+        Window.add(question_box);
+
+        submit_box.add(submit_text, BorderLayout.CENTER);
+
+        Window.add(submit_box);
+    }
 }

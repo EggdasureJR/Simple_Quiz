@@ -1,4 +1,6 @@
 {
+    "instructions": "This is a standard test for phasmophobia but for every question unless specified exclude the Mimic",
+
     "Q_4-1": {
         "Q": "Which phasmophobia ghost can teleport outside of a hunt?",
         "A-1": "Jinn",

@@ -16,6 +16,8 @@ public class Questions {
 
     static String test = "";
 
+    static String instructions = "";
+
     public static void Quizzes(){
         JSONParser parser = new JSONParser();
 
@@ -32,9 +34,21 @@ public class Questions {
 
             Tests = Tests.substring(1, Tests.length());
 
-            for(int n = 0; n < Tests.length() - 2; n++){
+            for(int n = 1; n < Tests.length() - 2; n++){
                 if(Tests.substring(n, n + 2).equals("\\/")){
                     Tests = Tests.substring(0, n) + "/" + Tests.substring(n + 2, Tests.length());
+                }
+            }
+
+            Tests = Tests.substring(16, Tests.length());
+
+            for(int n = 0; n < Tests.length() - 1; n++){
+                if(Tests.substring(n, n + 1).equals("\"")){
+                    instructions = Tests.substring(0, n);
+
+                    Tests = Tests.substring(n + 2,Tests.length());
+
+                    break;
                 }
             }
 
